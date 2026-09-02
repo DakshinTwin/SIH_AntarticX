@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <defs>
+    <filter id="invert-mask">
+      <feColorMatrix type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0"/>
+    </filter>
+    <mask id="antarctica-mask">
+      <image href="/antarctica-silhouette.jpg" width="1000" height="700" filter="url(#invert-mask)"/>
+    </mask>
+  </defs>
+  <rect width="1000" height="700" fill="#648BA8" mask="url(#antarctica-mask)"/>
+</svg>
